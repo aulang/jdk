@@ -33,7 +33,7 @@ RUN apk add --no-cache --virtual .build-deps curl binutils \
     && mv /tmp/libz/usr/lib/libz.so* /usr/glibc-compat/lib \
     && apk del --purge .build-deps glibc-i18n \
     && apk --no-cache add tzdata \
-    && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \ 
+    && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
     && apk add --update --no-cache ttf-dejavu fontconfig \
     && rm -rf /tmp/*.apk /tmp/gcc /tmp/gcc-libs.tar.xz /tmp/libz /tmp/libz.tar.xz /var/cache/apk/*
