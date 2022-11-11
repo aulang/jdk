@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:alpine-slim
+FROM openjdk:17-jdk-alpine
 
 ENV LANG='zh_CN.UTF-8' LANGUAGE='zh_CN:zh:en_US:en' LC_ALL='zh_CN.UTF-8'
 
